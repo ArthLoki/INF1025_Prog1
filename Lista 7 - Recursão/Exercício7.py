@@ -13,7 +13,6 @@ def mudaBase(n: int, base: int) -> int:
     quociente = n // base
     
     return resto + mudaBase(quociente, base) * 10
-        
 
 def main_exercicio7():
   
