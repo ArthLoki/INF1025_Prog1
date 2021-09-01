@@ -22,7 +22,6 @@ Exemplo para o código do produto 2314:
 
 
 '''
-
 import exercicio5_listaFunçoes as ex5
 
 def valor_a_pagar(cod):
@@ -30,9 +29,9 @@ def valor_a_pagar(cod):
     primParte = cod // 100
     segParte = cod % 100
     precoBasico = primParte * 15.00 + segParte
-    desconto = segParte / 100
-    pDesconto = precoBasico - precoBasico * desconto
-    return pDesconto
+    precoDesconto = ex5.calcula_percent(precoBasico, segParte)
+    precoFinal = precoBasico - precoDesconto
+    return precoFinal
 
 cod = int(input("Digite o seu código: "))
 valorAPagar = valor_a_pagar(cod)
