@@ -24,4 +24,4 @@ tamLinha = int(input("Digite o tamanho total da string resultante: "))
 simbolo = input("Digite o símbolo a ser replicado e agregado a string centralizada: ")
   
 centralizada = centralizaString (texto, tamLinha, simbolo)
-print("A string centralizada é:\ncentralizada\n")
+print("\nRESPOSTA\nA string centralizada é:\n%s\n"%centralizada)
